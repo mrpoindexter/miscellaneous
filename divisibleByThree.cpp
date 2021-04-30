@@ -12,7 +12,7 @@ int digitNumber(int number1)
 	return count;
 }
 
-int divisibleByThree(int number2)
+int sumOfDigits(int number2)
 {
 	int a;
 	int sum = 0;
@@ -25,7 +25,7 @@ int divisibleByThree(int number2)
 	if (digitNumber(sum) == 1)
 		return sum;
 	else
-		return divisibleByThree(sum);
+		return sumOfDigits(sum);
 }
 
 
@@ -34,8 +34,11 @@ int main()
 	int number3;
 	cout << "Enter a number: "<< endl;
 	cin >> number3;
-	cout << "Sum of individual digits: " << divisibleByThree(number3) << endl;
-	divisibleByThree(number3) % 3 == 0 ? cout << "Divisible by 3" : cout << "Not divisible by 3" << endl;
+	cout << "Sum of individual digits: " << sumOfDigits(number3) << endl;
+	if (sumOfDigits(number3) == 3 || sumOfDigits(number3) == 6 || sumOfDigits(number3) == 9)
+		cout << "Divisible by 3" << endl;
+	else
+		cout << "Not divisible by 3" << endl;
 
 	system("pause>0");
 	return 0;
