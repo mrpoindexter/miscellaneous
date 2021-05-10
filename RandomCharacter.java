@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class RandomCharacter {
     
-    public static String randomCharacterGenerator(int size)
+    public static String randomTextGenerator(int size)
     {
         Random R = new Random();
         char characters[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4',
@@ -33,7 +33,7 @@ public class RandomCharacter {
         System.out.print("Enter the limit: ");
         int limit = S.nextInt();
         
-        System.out.println(randomCharacterGenerator(limit));
+        System.out.println(randomTextGenerator(limit));
     }
     
 }
