@@ -11,11 +11,6 @@ void Print(int array1[], int size)
 	cout << endl;
 }
 
-int Sum(int a, int b)
-{
-	return a + b;
-}
-
 int* selfMadeFibo(int first, int size)
 {
 	int* series = new int[size];
