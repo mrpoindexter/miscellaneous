@@ -5,3 +5,4 @@ Random C++ problems are available here
 4). Statistical record shown using c++.
 5). Binary Table within a user defined range.
 6). Solving simultaneous equations both with 2 variables or three within a user defined range of integer solution.
+7). Finding all the prime numbers in a given range taken through user input. It also displays the number of prime numbers in the specified range.
